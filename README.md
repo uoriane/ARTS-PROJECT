@@ -1,87 +1,106 @@
-# ARTS – Audit Recommendation Tracking System
+# Audit Recommendation Tracking System (ARTS)
 
-## Introduction
-The Internal Audit and Integrity Department (IAID) of the Rwanda Revenue Authority (RRA) plays a key role in ensuring the implementation of audit recommendations. These recommendations originate from:
+## Overview
 
-- Internal audits
-- External audits (e.g. Office of the Auditor General – OAG, external consultants)
-- Quality Management System (QMS) internal and external audits
+The **Audit Recommendation Tracking System (ARTS)** is a web-based system designed to support the Internal Audit and Integrity Department and the Quality Management System (QMS) team of the Rwanda Revenue Authority (RRA). Its core purpose is to automate, track, and monitor the implementation of audit recommendations across all RRA departments, divisions, and units.
 
-The Audit Recommendation Tracking System (ARTS) is a web-based system intended to automate and streamline the follow-up process on audit recommendations, from creation through implementation and validation.
+ARTS centralizes audit findings and recommendations from **internal audits, external audits, and QMS audits**, providing real-time visibility into implementation progress, accountability, and compliance.
 
-## Purpose of the System
-ARTS aims to:
+---
 
-- Automate submission of evidence for implementation of audit recommendations
-- Automate tracking and reporting of recommendation implementation
-- Provide real-time visibility on the status of audit recommendations
-- Ensure timely notifications and follow-up
-- Generate implementation status reports efficiently
-- Improve accountability and compliance with audit requirements
+## What the System Is Supposed to Do
 
-## Scope and Supported Departments/Divisions
-ARTS will support recommendations originating from and/or assigned to multiple RRA entities, including but not limited to:
+ARTS is built to:
 
-- Commissioner General Office (CG Office)
-- Domestic Taxes Department (DTD)
-- Customs Services Department (CSD)
-- Finance Department (FIND)
-- Information Technology & Digital Transformation Department (ITDTD)
-- Legal Services and Board Affairs Department (LSBAD)
-- Strategy and Risk Analysis Department (SRAD)
-- Internal Audit and Integrity Department (IAID)
-- Administration and Logistics Division (ALD)
-- Human Resource (HR)
-- Strategic Intelligence and Investigation Division (SIID)
-- Taxpayer Service and Communication Division (TPS)
-- Taxpayer Audit Division (TAD)
-- Provincial and Decentralized Revenue Division (PDRD)
-- Debt Management Division (DMD)
-- Registration, Filing and Payment Division (RFPD)
-- Tax Control and Operational Support Division (TCOSD)
-- Customs Operations Divisions (COD)
-- Customs Operations Support Division (COSD)
-- Single Project Implementation Unit (SPIU)
-- Compliance Risk Analysis and Data Analytics Division (CRADAD)
-- Planning, Research and Statistics Division (PRSD)
-- Revenue Accounting Division (RAD)
+* Automate the submission and follow-up of audit recommendations
+* Track implementation progress from recommendation issuance to final validation
+* Provide real-time status updates on all audit recommendations
+* Improve accountability across departments and responsible staff
+* Support timely decision-making through dashboards and reports
+* Reduce manual follow-ups and delays in audit implementation
 
-## High-Level Features
+---
 
-### Core Functional Areas
-- **Audit Recommendation Management**
-  - Capture audit findings, recommendations, corrective actions, implementation timelines/deadlines
-  - Assign responsible departments/divisions/units and specific staff
-  - Track implementation status (fully implemented, partially implemented, not implemented, beyond RRA management control, not applicable)
+## Scope of the System
 
-- **Workflows and Roles**
-  - Internal auditors and QMS auditors create and manage recommendations
-  - Departmental focal persons coordinate implementation and upload evidence
-  - Departmental staff implement actions and submit evidence to focal persons
-  - IAID/QMS auditors validate implementation and can return items for further work
-  - Director/Team Leader QMS for Internal Audit validates final status
+The system supports audit recommendations from all RRA departments, divisions, and units, including but not limited to:
 
-- **Dashboards and Reporting**
-  - Department/division/unit-level statistics on recommendation volumes and statuses
-  - Color-coded status indicators (Green, Yellow, Red, Purple, Blue)
-  - Exportable reports (e.g. Excel/PDF) and overdue tracking
+* Commissioner General Office
+* Domestic Taxes Department
+* Customs Services Department
+* Finance Department
+* IT & Digital Transformation Department
+* Internal Audit and Integrity Department
+* Human Resource, Legal, Strategy, Risk, and all other operational and support divisions
 
-- **Notifications**
-  - Email and in-system notifications for new recommendations, submissions, validations, and updates
-  - Notifications to auditors, QMS Team Leader, Director, and relevant management roles
+---
 
-- **Access Control & User Management**
-  - Role-based access (auditors, departmental focal persons, departmental staff, administrators, management)
-  - Audit trail for changes, including status updates and administrative actions
+## Key Functional Areas
 
-## Initial Technical Notes
+### 1. Home Page
 
-The concrete technology stack (backend, frontend, database, deployment model) will be defined in subsequent steps. This repository currently contains only the initial documentation and git history to bootstrap the ARTS project.
+* Provides a brief background of ARTS, the Internal Audit Unit, and QMS
+* Displays a dashboard summarizing audit recommendation status
+* Shows activity progress such as uploads, submissions, and validations
 
-Future steps will include:
+### 2. Audit Recommendation Management
 
-- Selecting the technology stack (e.g. .NET/Java/Node/Python, relational database, frontend framework)
-- Designing the data model (e.g. audit findings, recommendations, departments, users, roles, workflow states)
-- Implementing authentication and role-based authorization
-- Implementing core workflows (creation, assignment, evidence upload, validation, reporting)
-- Setting up CI/CD, testing, and backup/DR mechanisms in line with RRA policies.
+* Allows auditors to capture and manage audit recommendations
+* Records audit details, findings, recommendations, corrective actions, timelines, and responsible parties
+* Supports categorization of recommendations (Internal Audit, External Audit, QMS Internal, QMS External)
+* Enables assignment of recommendations to focal persons and implementing staff
+* Supports evidence submission, review, and validation workflows
+
+### 3. Validation Workflow
+
+* Departmental staff submit evidence of implementation
+* Focal persons review and forward submissions for validation
+* Auditors assess implementation status and return submissions if necessary
+* Directors or QMS Team Leaders validate final implementation status
+
+### 4. Dashboard and Reporting
+
+* Displays the number of recommendations per department/division/unit
+* Shows implementation status percentages
+* Uses color-coded status indicators:
+
+  * Green: Fully implemented
+  * Yellow: Partially implemented
+  * Red: Not implemented
+  * Purple: Beyond management control
+  * Blue: Not applicable
+
+### 5. Notifications and Reminders
+
+* Sends system and email notifications for key actions and updates
+* Alerts responsible staff, auditors, management, and leadership
+* Supports reminders for overdue or pending submissions
+
+### 6. Access Control and User Roles
+
+* Auditors manage recommendations assigned to them
+* Directors and QMS Team Leaders have oversight and edit rights
+* Departmental focal persons view and act on assigned recommendations
+* Administrators manage users, permissions, and system controls
+
+### 7. Reporting and Data Management
+
+* Generates real-time reports with filters by department and status
+* Supports export of reports for further analysis
+* Maintains audit trails and logs all changes
+* Ensures backup, recovery, and data integrity
+
+---
+
+## Expected Impact
+
+By implementing ARTS, RRA aims to:
+
+* Strengthen audit follow-up and compliance
+* Improve transparency and accountability
+* Enhance coordination between auditors and audited departments
+* Provide leadership with accurate, real-time audit implementation insights
+
+---
+
+*This document describes the functional purpose and behavior of the ARTS system. Technical implementation details and materials will be defined as the project evolves.*
