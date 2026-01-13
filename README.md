@@ -25,13 +25,29 @@ ARTS is built to:
 
 The system supports audit recommendations from all RRA departments, divisions, and units, including but not limited to:
 
-* Commissioner General Office
-* Domestic Taxes Department
-* Customs Services Department
-* Finance Department
-* IT & Digital Transformation Department
-* Internal Audit and Integrity Department
-* Human Resource, Legal, Strategy, Risk, and all other operational and support divisions
+-  Commissioner General Office (CG Office)
+- Domestic Taxes Department (DTD)
+- Customs Services Department (CSD)
+- Finance Department (FIND)
+- Information Technology & Digital Transformation Department (ITDTD)
+- Legal Services and Board Affairs Department (LSBAD)
+- Strategy and Risk Analysis Department (SRAD)
+- Internal Audit and Integrity Department (IAID)
+- Administration and Logistics Division (ALD)
+- Human Resource (HR)
+- Strategic Intelligence and Investigation Division (SIID)
+- Taxpayer Service and Communication Division (TPS)
+- Taxpayer Audit Division (TAD)
+- Provincial and Decentralized Revenue Division (PDRD)
+- Debt Management Division (DMD)
+- Registration, Filing and Payment Division (RFPD)
+- Tax Control and Operational Support Division (TCOSD)
+- Customs Operations Divisions (COD)
+- Customs Operations Support Division (COSD)
+- Single Project Implementation Unit (SPIU)
+- Compliance Risk Analysis and Data Analytics Division (CRADAD)
+- Planning, Research and Statistics Division (PRSD)
+- Revenue Accounting Division (RAD)
 
 ---
 
